@@ -1,4 +1,9 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnInit,
+  ViewEncapsulation,
+} from '@angular/core';
 import { map } from 'rxjs';
 import { componentName } from './app.module';
 import { DataService } from './data.service';
@@ -8,8 +13,8 @@ import { COUNTRY_CODE_MAPPING } from '../assets/country-mapping';
   selector: componentName,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss', '../styles.scss'],
-  host: {},
   encapsulation: ViewEncapsulation.ShadowDom,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent implements OnInit {
   title = 'ota1';
