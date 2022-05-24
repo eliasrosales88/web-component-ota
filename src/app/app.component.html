@@ -1,0 +1,6 @@
+<div class="main_container">
+  <app-card>
+    <app-card-item [data]="item" [max]="max$|async" *ngFor="let item of data$ | async">
+    </app-card-item>
+  </app-card>
+</div>

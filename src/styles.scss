@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.mat-progress-bar {
+  height: 8px !important;
+  border-radius: 4px !important;
+}
+.mat-progress-bar-background {
+  fill: #e1e5ec;
+}
+.mat-progress-bar-buffer {
+  background-color: #cbd0e9;
+}
+.mat-progress-bar-fill::after {
+  background-color: #035086;
+}
+
+:host(.item-hover) {
+  .card_item_container:hover {
+    background-color: #e9e9e9;
+  }
+}

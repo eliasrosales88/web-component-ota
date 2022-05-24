@@ -1,0 +1,48 @@
+.card {
+  &_container {
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #e1e5ec;
+  }
+  &_header {
+    padding: 12px 16px;
+    background: #ffffff;
+    border-bottom: 1px solid #e1e5ec;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    &_title {
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0px;
+    }
+  }
+  &_main {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 285px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,0 +1,19 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  &_container {
+    font-family: "Inter";
+    font-style: normal;
+    max-width: 80%;
+    width: 100%;
+    min-width: 394px;
+  }
+}

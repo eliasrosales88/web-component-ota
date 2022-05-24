@@ -1,0 +1,51 @@
+.card_item {
+  &_container {
+    // height: 52px;
+    border-bottom: 1px solid #e1e5ec;
+    display: flex;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  &_main {
+    color: #4e6477;
+    flex: 1;
+    &_header {
+      padding: 8px 0 8px 16px;
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      &_title {
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+      }
+    }
+    &_section {
+      padding: 0 0 0 16px;
+    }
+  }
+  &_aside {
+    color: #4e6477;
+    padding: 8px 16px 8px 12px;
+    &_header {
+      &_diff.green {
+        color: #049d01;
+        .value {
+          display: inline-block;
+        }
+      }
+      &_diff.red {
+        color: #eb2c35;
+      }
+    }
+    &_section {
+      span {
+        color: #60778b;
+      }
+    }
+  }
+}

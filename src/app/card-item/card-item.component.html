@@ -1,0 +1,29 @@
+<div class="card_item_container">
+  <div class="card_item_main">
+    <header class="card_item_main_header">
+      <h3 class="card_item_main_header_title">{{data.countryName}}</h3>
+      <span>{{data.value.nr_of_rooms}}</span>
+    </header>
+    <section class="card_item_main_section">
+      <mat-progress-bar *ngIf="max" color="primary" mode="determinate"
+        [value]="(data.value.nr_of_rooms/max.value.nr_of_rooms) *100">
+      </mat-progress-bar>
+    </section>
+  </div>
+  <div class="card_item_aside">
+    <header class="card_item_aside_header">
+      <div class="card_item_aside_header_diff" [class.green]="data.rooms_diff > 0" [class.red]="data.rooms_diff < 0">
+        <span [hidden]="data.rooms_diff <= 0">+</span>
+        <span [class.value]="data.rooms_diff > 0">
+          {{data.rooms_diff}}
+        </span>
+      </div>
+    </header>
+    <section class="card_item_aside_section">
+      <span>
+        vs. Last Year
+      </span>
+    </section>
+  </div>
+
+</div>
