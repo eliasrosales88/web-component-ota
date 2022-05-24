@@ -34,6 +34,8 @@ _./public/index.html_
 To test the web component build in local server  
 `npm run start:element`
 
+The web component accepts adding **item-hover** class to add hover styles on list items
+
 To build as angular app  
 `npm run build`
 
