@@ -2,17 +2,46 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 
-## Development server
+## Instructions
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`npm i`
+
+To start dev server  
+`npm start`
+
+To build a web component  
+`npm run build:element`  
+The command above will create a **public folder** and make sure to uncomment the script tag of the **wc-booking.js** in the _./public/index.html_
+
+_./public/index.html_
+
+```html
+...
+  <div>
+    <wc-booking></wc-booking>
+    <!-- <wc-booking class="item-hover"></wc-booking> -->
+  </div>
+
+  <!-- UNCOMMENT SCRIPT BELOW TO TEST THE WEB COMPONENT -->
+  <!-- <script src="./ota/component/wc-booking.js">
+  </script> -->
+</body>
+
+</html>
+
+```
+
+To test the web component build in local server  
+`npm run start:element`
+
+To build as angular app  
+`npm run build`
+
+---
 
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
