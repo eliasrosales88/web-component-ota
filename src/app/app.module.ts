@@ -19,7 +19,7 @@ export const componentName = 'wc-booking';
     BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [],
+  bootstrap: [AppComponent],
 })
 export class AppModule {
   constructor(private injector: Injector) {}
